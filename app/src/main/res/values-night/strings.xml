@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Mik\'s PTCGL Timer</string>
     <string name="player2ButtonString">Player 2</string>
     <string name="settingsButtonText">Settings</string>
     <string name="startButtonText">Start Game</string>

@@ -30,26 +30,36 @@
             android:minWidth="0dp"
             android:minHeight="0dp"
             android:rotation="180"
-            android:text="player1Button" />
+            android:text="@string/player2ButtonString" />
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/middleConstraintLayout"
-        android:layout_width="338dp"
-        android:layout_height="49dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="129dp"
-            android:layout_height="47dp"
-            android:text="Button"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/settingsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settingsButtonText"
+            app:layout_constraintEnd_toStartOf="@+id/startButton"
+            app:layout_constraintHorizontal_chainStyle="spread"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/startButtonText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/settingsButton"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -74,6 +84,6 @@
             android:layout_margin="5dp"
             android:minWidth="0dp"
             android:minHeight="0dp"
-            android:text="player2Button" />
+            android:text="@string/player1ButtonString" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
